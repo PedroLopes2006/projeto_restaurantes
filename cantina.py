@@ -37,6 +37,8 @@ def exibir_opcoes():
 
 
 def alterar_estado_restaurante():
+    """Essa função tem como objetivo alterar o estado do restaurante entre ativo e desativado de acordo com a escolha do usuário"""
+
     exibir_subtitulo('Alterando estado do restaurante')
 
     nome_restaurante = input(
@@ -66,6 +68,8 @@ def opcao_invalida():
 
 
 def cadastrar_novo_restaurante():
+    """Essa função tem como objetivo cadastrar restaurantes e armazenar as informações dele em um dicionário"""
+
     exibir_subtitulo('Cadastro de novos restaurantes: ')
     nome_restaurante = input('Digite o nome do restaurante: ')
     categoria = input(f'Digite o nome da categoria do {nome_restaurante}: ')
@@ -77,6 +81,8 @@ def cadastrar_novo_restaurante():
 
 
 def listar_restaurantes():
+    """Essa função pega a lista de restaurantes e exibi todas as informações de cada um deles"""
+
     exibir_subtitulo('Listando Restaurantes:')
 
     print(f'{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | Status')
